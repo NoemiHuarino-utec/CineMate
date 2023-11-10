@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Recomendaciones Personalizadas',
+    //Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Cinemate utiliza inteligencia artificial para ofrecerte recomendaciones de películas personalizadas basadas en tus gustos.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Descubre Nuevas Películas',
+    //Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Con Cinemate, podrás descubrir nuevas películas que se ajusten a tus preferencias y ampliar tu repertorio cinematográfico.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Tu Feedback Importa',
+    //Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Da like o dislike a las peliculas que te salen para que nuestra IA se ajuste mejor a tus preferencias y haga cada vez mejores recomendaciones.
       </>
     ),
   },
@@ -37,10 +34,10 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
+      /*  <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div> */
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -56,7 +53,7 @@ export default function HomepageFeatures() {
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
-          ))}
+          ))} 
         </div>
       </div>
     </section>
